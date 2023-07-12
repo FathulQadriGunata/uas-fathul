@@ -19,3 +19,10 @@ Route::get('/', 'App\Http\Controllers\akuntansitransaksiController@index');
     Route::get('mahasiswaferdi/delete/{id}', 'App\Http\Controllers\MahasiswaFerdiController@delete');
 
 
+    Route::get('prodifathul', 'App\Http\Controllers\ProdifathulController@index');
+    Route::get('prodifathul/tambah', 'App\Http\Controllers\ProdifathulController@tambah');
+    Route::post('prodifathul/tambah_proses', 'App\Http\Controllers\ProdifathulController@tambah_proses');
+    Route::get('prodifathul/edit/{id}', 'App\Http\Controllers\ProdifathulController@edit');
+    Route::post('prodifathul/edit_proses', 'App\Http\Controllers\ProdifathulController@edit_proses');
+    Route::get('prodifathul/delete/{id}', 'App\Http\Controllers\ProdifathulController@delete');
+
